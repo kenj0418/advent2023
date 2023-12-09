@@ -4,6 +4,10 @@ const sum = (arr) => {
   return arr.reduce((tot, curr) => { return (tot + curr) }, 0);
 }
 
+const product = (arr) => {
+  return arr.reduce((tot, curr) => { return (tot * curr) }, 1);
+}
+
 const maxIndex = (arr) => {
   let maxIndex = 0;
 
@@ -93,4 +97,4 @@ const parseRecords = (lines, rowInitialFunc, rowAccumulatorFunc) => {
   return records;
 }
 
-module.exports = { sum, maxIndex, permutator, powerSet, readArrayFromFile, readSingleLineArraysFromFile, readStringArrayFromFile, readListsFromFile, parseRecords }
+module.exports = { sum, product, maxIndex, permutator, powerSet, readArrayFromFile, readSingleLineArraysFromFile, readStringArrayFromFile, readListsFromFile, parseRecords }
